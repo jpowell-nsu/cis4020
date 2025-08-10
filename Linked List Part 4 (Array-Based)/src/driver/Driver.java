@@ -6,7 +6,6 @@ import linkedlist.List;
 public class Driver {
 
 	public static void main(String[] args) {
-		
 		Scanner scnr = new Scanner(System.in);
 		List myList = new List();
 		Integer value;
