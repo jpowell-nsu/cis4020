@@ -12,9 +12,11 @@ public class Droid {
 		return name;
 	}
 	
+	/*
 	@Override
 	public String toString() {
 		return ("Name: " + this.name);
 	}
+	*/
 	
 }

@@ -31,14 +31,14 @@ public class List implements ListInterface {
 
 	public void add(int index, Object item) throws ListIndexOutOfBoundsException {
 		// check size of list
-		if(numItems > MAX_LIST) {
+		if (numItems > MAX_LIST) {
 			throw new ListException("ListException on add");
 		}
 		//insert the item
-		if(index >= 0 && index <= numItems) {
+		if (index >= 0 && index <= numItems) {
 			// make room for new element by shifting right
 			// all positions that are >= index (no shift if index == numItems+1)
-			for(int pos = numItems; pos >= index; pos--) {
+			for (int pos = numItems; pos >= index; pos--) {
 				items[pos+1] = items[pos];
 			}
 			// insert new item
@@ -50,7 +50,7 @@ public class List implements ListInterface {
 	} //end add
 
 	public Object get(int index) throws ListIndexOutOfBoundsException {
-		if(index >= 0 && index < numItems) {
+		if (index >= 0 && index < numItems) {
 			return items[index];
 		} else  {  // index out of range
 			throw new ListIndexOutOfBoundsException("ListIndexOutOfBoundsException on get");
@@ -58,10 +58,10 @@ public class List implements ListInterface {
 	} // end get
 
 	public void remove(int index) throws ListIndexOutOfBoundsException {
-		if(index >= 0 && index < numItems) {
+		if (index >= 0 && index < numItems) {
 			// delete item by shifting left all 
 			// positions > index (no shift if index == size)
-			for(int pos = index+1; pos <= size(); pos++) {
+			for (int pos = index+1; pos <= size(); pos++) {
 				items[pos-1] = items[pos];
 			}
 			numItems--;
