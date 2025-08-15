@@ -7,7 +7,7 @@ import linkedlist.List;
 public class Driver {
 
 	public static void main(String[] args) {
-test
+
 		Scanner scnr = new Scanner(System.in);
 		List myList = new List();
 		Integer value;
@@ -16,8 +16,8 @@ test
 		System.out.print("Enter 7 ints: ");
 		for (int i = 0; i < 7; i++) {
 			value = scnr.nextInt();
-			myList.add(0, value); 				// adding at the head (element 0)
-			//myList.add(myList.size(), value);		// add it at the end
+			//myList.add(0, value); 					// adding at the head (element 0)
+			myList.add(myList.size(), value);		// add it at the end
 		}
 		scnr.close();
 
