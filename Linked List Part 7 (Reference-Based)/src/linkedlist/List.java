@@ -41,10 +41,10 @@ public class List implements ListInterface {
 		Node prev = null;
 				
 		while (curr != null) {
-			System.out.printf("current: %-24s|%4s|%-24s\n", curr, curr.item, curr.next);
+			System.out.printf("current: %-24s|%-12s|%-24s\n", curr, curr.item, curr.next);
 /*
 			if (prev != null) {
-				System.out.printf("prev   : %-24s|%4s|%-24s\n", prev, prev.item, prev.next);
+				System.out.printf("prev   : %-24s|%-12s|%-24s\n", prev, prev.item, prev.next);
 			} else {
 				System.out.printf("prev   : %-24s\n", prev);
 			}
