@@ -52,7 +52,7 @@ public class Stack implements StackInterface {
 		}
 	}
 	
-	public void displaWithIdentities() {
+	public void displayWithIdentities() {
 		Node hare = top;
 			
 		System.out.printf("%-24s|%-12s|%-24s\n", "NODE", "ITEM", "NEXT");

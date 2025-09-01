@@ -20,7 +20,7 @@ public class Driver {
 		}
 		scnr.close();
 		
-		stack.displaWithIdentities();
+		stack.displayWithIdentities();
 		System.out.println();
 
 		stack.display();

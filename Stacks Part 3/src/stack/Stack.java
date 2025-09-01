@@ -41,7 +41,7 @@ public class Stack implements StackInterface {
 	}
 	
 	public void displayIdentities() {
-		list.displaWithIdentities();
+		list.displayWithIdentities();
 	}
   
 	public void display() {

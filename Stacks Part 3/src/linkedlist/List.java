@@ -22,7 +22,7 @@ public class List implements ListInterface {
 		return numItems;
 	}
 	
-	public void displaWithIdentities() {
+	public void displayWithIdentities() {
 		Node hare = head;
 			
 		System.out.printf("%-24s|%-12s|%-24s\n", "NODE", "ITEM", "NEXT");
