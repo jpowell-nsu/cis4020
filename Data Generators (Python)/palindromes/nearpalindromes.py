@@ -1,6 +1,6 @@
 import random
 import string
-
+ 
 def make_near_palindrome(length=7):
     """
     Generate a near-palindrome string of given length (>=7).
