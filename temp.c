@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+struct Point {
+    int x;
+    int y;
+};
+
 // Simple function that returns the square of a number
 int square(int n) {
     return n * n;
@@ -52,5 +57,13 @@ int main() {
     int result = square(4);
     printf("The square of 4 is %d\n", result);
 */
+
+/*
+    struct Point* p1 = (struct Point*)malloc(sizeof(struct Point));
+    p1->x = 10;
+    p1->y = 20;
+    printf("Point p1: (%d, %d)\n", p1->x, p1->y);
+    free(p1);
+*/  
     return 0;
 }
